@@ -19,7 +19,7 @@ function EditBook() {
 
     useEffect(() => {
         setLoading(true);
-        axios.get(`http://localhost:4000/books/${id}`)
+        axios.get(`book-app-brown.vercel.app/${id}`)
             .then((res) => {
                 const bookData = res.data.book;
                 setTitle(bookData.title);
