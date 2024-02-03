@@ -6,7 +6,7 @@ import router from './Routes/BookRoute.js';
 
 const app = express();
 app.use(cors({
-    origin: ["https://book-app-wrqm.vercel.app/"],
+    origin: ["https://book-app-wrqm.vercel.app"],
     methods: ["POST", "GET"],
     credentials: true
 }))
