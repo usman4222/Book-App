@@ -11,7 +11,7 @@ function ShowBook() {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:4000/books/${id}`)
+      .get(`book-app-brown.vercel.app/${id}`)
       .then((res) => {
         setBook(res.data.book);
         setLoading(false); 
